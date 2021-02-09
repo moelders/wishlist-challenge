@@ -1,0 +1,58 @@
+{
+  "title": "Wishlist Challenge",
+  "auth": {
+    "label": "Authentication",
+    "login": "login",
+    "logout": "logout",
+    "form": {
+      "userName": "Username",
+      "password": "Password",
+      "placeholder": "Type your {{type, lowercase}}..."
+    }
+  },
+  "filters": {
+    "label": "Filters",
+    "type": "Product type...",
+    "sorting": "Sort by rating",
+    "pagination": "page of {{totalPages}}",
+    "sortings": {
+      "default": "Sorting...",
+      "asc": "Worst ratings",
+      "desc": "Best ratings"
+    },
+    "types": {
+      "default": "Product type...",
+      "clima": "Clima",
+      "cycling": "Cycling",
+      "hiking": "Hiking",
+      "rugby": "Rugby",
+      "swimming": "Swimming"
+    },
+    "visualization": {
+      "grid": "Grid",
+      "list": "list"
+    }
+  },
+  "header": {
+    "label": "Header",
+    "doc": "API"
+  },
+  "products": {
+    "label": "Products"
+  },
+  "wishlist": {
+    "label": "Wishlist",
+    "empty": "{{ fullName }}, there are no products on your wishlist, add them from:"
+  },
+  "component": {
+    "auth": {
+      "accept": "Accept",
+      "cancel": "Cancel"
+    },
+    "product": {
+      "category": "Category",
+      "sport": "Sport",
+      "rating": "Rating"
+    }
+  }
+}

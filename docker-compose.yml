@@ -1,0 +1,44 @@
+version: '3'
+services:
+  redis:
+    image: redis
+    container_name: wishlist-challenge-redis
+    expose:
+      - 6379
+  auth:
+    build: ./packages/auth
+    container_name: wishlist-challenge-auth
+    ports:
+      - 3000:3000
+    environment:
+      - PORT=3000
+      - JWT_EXPIRATION=10m
+  api:
+    build: ./packages/api
+    container_name: wishlist-challenge-api
+    volumes:
+      - ./:/api
+    ports:
+      - 8000:8000
+    links:
+      - redis
+      - auth
+    environment:
+      - API_PORT=8000
+      - AUTH_API_URL=http://wishlist-challenge-auth:3000
+      - DB_HOST=wishlist-challenge-redis
+      - DB_PORT=6379
+      - LOCAL_ENV=false
+  swagger:
+    build: ./packages/swagger
+    ports:
+      - 8082:80
+    environment:
+      - SWAGGER_URL=http://localhost:8000/swagger.json
+  ui:
+    build: ./packages/ui
+    ports:
+      - 8080:80
+    environment:
+      - API_URL=http://localhost:8000
+      - SWAGGER_URL=http://localhost:8082

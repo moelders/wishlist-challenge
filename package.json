@@ -1,0 +1,33 @@
+{
+  "name": "wishlist-challenge",
+  "version": "1.0.0",
+  "description": "Wishlist Challenge",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moelders/wishlist-challenge"
+  },
+  "engines": {
+    "node": ">= 12",
+    "npm": ">= 6"
+  },
+  "scripts": {
+    "setup": "lerna bootstrap --no-ci",
+    "start": "lerna run start --parallel",
+    "start:watch": "lerna run start:watch --parallel",
+    "start:debug": "lerna run start:debug --parallel",
+    "start:docker": "docker-compose up -d",
+    "stop:docker": "docker-compose down --remove-orphans",
+    "clean": "lerna run clean --stream",
+    "build": "lerna run build --stream",
+    "build:docker": "npm run build && docker-compose up --build --remove-orphans",
+    "lint": "lerna run lint --stream",
+    "test": "lerna run test --stream"
+  },
+  "devDependencies": {
+    "lerna": "3.22.1"
+  },
+  "keywords": [
+    "coding-challenge"
+  ]
+}

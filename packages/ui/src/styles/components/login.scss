@@ -1,0 +1,14 @@
+.login {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: $screen-xs-max) {
+    margin-bottom: 2rem;
+  }
+
+  .login__modal {
+    min-width: 20rem;
+  }
+}

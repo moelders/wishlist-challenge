@@ -1,0 +1,19 @@
+{
+  "name": "wishlist-challenge-api",
+  "version": "1.0.0",
+  "description": "Wishlist Challenge: API",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moelders/wishlist-challenge"
+  },
+  "scripts": {
+    "start": "deno run -A Drakefile.ts start",
+    "start:watch": "deno run -A Drakefile.ts start:watch",
+    "start:debug": "deno run -A --inspect-brk src/main.ts",
+    "build": "",
+    "lint": "deno run -A Drakefile.ts lint",
+    "test": "",
+    "update:typings": "deno run -A Drakefile.ts typings"
+  }
+}

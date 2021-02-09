@@ -1,0 +1,26 @@
+.wish {
+  $size: 2.5rem;
+
+  background-color: $color-white;
+  border-radius: 50%;
+  color: $l-gray-light;
+  width: $size;
+  height: $size;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-warning;
+  }
+
+  &.wish--active {
+    color: $color-warning;
+
+    &:hover {
+      color: $l-gray-light;
+    }
+  }
+
+  &.wish--dark {
+    background-color: $l-gray-lightest;
+  }
+}

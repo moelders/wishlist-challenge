@@ -1,0 +1,15 @@
+{
+  "extends": "build-tools-babel",
+  "plugins": [
+    "@babel/plugin-syntax-dynamic-import",
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "regenerator": true
+      }
+    ]
+  ],
+  "presets": [
+    "@babel/react"
+  ]
+}

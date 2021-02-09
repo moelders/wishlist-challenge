@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "adidas-env/node",
+    "adidas-babel",
+    "adidas-es9",
+    "adidas-react"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

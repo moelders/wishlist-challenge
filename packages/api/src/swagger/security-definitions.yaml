@@ -1,0 +1,7 @@
+securityDefinitions:
+  BasicAuth:
+    type: basic
+  BearerAuth:
+    type: http
+    scheme: bearer
+    bearerFormat: JWT

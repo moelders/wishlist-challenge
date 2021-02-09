@@ -1,0 +1,43 @@
+.product-card {
+  &.card {
+    &.card--horizontal {
+      .card__footer {
+        padding-right: 4rem;
+        flex-grow: 0
+      }
+    }
+
+    &:not(.card--horizontal) {
+      height: 24rem;
+
+      .card__title {
+        max-height: 2.25rem;
+        overflow: hidden;
+      }
+
+      .card__header {
+        .card__image-container {
+          min-height: 16rem;
+        }
+      }
+
+      .card__attributes-container {
+        margin-bottom: 0;
+        max-height: unset;
+
+        .card__attribute {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+
+    .card__header {
+      .product-card__wish {
+        position: absolute;
+        top: $padding-base-vertical;
+        right: $padding-base-horizontal;
+      }
+    }
+  }
+}

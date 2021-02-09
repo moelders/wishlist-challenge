@@ -1,0 +1,43 @@
+definitions:
+  Product:
+    type: object
+    properties:
+      productId:
+        type: string
+      type:
+        type: string
+      sport:
+        type: string
+      badge:
+        type: string
+      title:
+        type: string
+      rating:
+        type: number
+      imageSrc:
+        type: string
+  ProductDetails:
+    type: object
+    properties:
+      category:
+        type: string
+      color:
+        type: string
+      subTitle:
+        type: string
+      secondImageSrc:
+        type: string
+    additionalProperties:
+      schema:
+        $ref: '#/definitions/Product'
+  UserAuth:
+    type: object
+    properties:
+      userName:
+        type: string
+      fullName:
+        type: string
+      mail:
+        type: string
+      token:
+        type: string

@@ -1,0 +1,32 @@
+# Untracked general purpose files:
+.DS_Store
+.eslintcache
+.idea
+.npmrc
+.project
+.sass-cache
+.settings
+.vscode
+*.bck
+*.code-*
+*.log
+*.tmp
+*.orig
+*.swp
+npm-debug*
+
+# Untracked general purpose directories:
+.deno
+coverage
+dist
+docs
+node_modules
+tmp
+
+# Untracked application purpose files and directories:
+.env
+**/cypress/fixtures
+**/cypress/plugins
+**/cypress/support
+**/cypress/videos
+**/test/results

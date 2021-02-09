@@ -1,0 +1,58 @@
+{
+  "title": "(dev: title)",
+  "auth": {
+    "label": "(dev: auth.label)",
+    "login": "(dev: auth.login)",
+    "logout": "(dev: auth.logout)",
+    "form": {
+      "userName": "(dev: auth.form.userName)",
+      "password": "(dev: auth.form.password)",
+      "placeholder": "(dev: auth.form.placeholder, {{type, lowercase}})"
+    }
+  },
+  "filters": {
+    "label": "(dev: filters.label)",
+    "type": "(dev: filters.type)",
+    "sorting": "(dev: filters.sorting)",
+    "pagination": "(dev: filters.pagination, {{totalPages}})",
+    "sortings": {
+      "default": "(dev: filters.types.default)",
+      "asc": "(dev: filters.types.asc)",
+      "desc": "(dev: filters.types.desc)"
+    },
+    "types": {
+      "default": "(dev: filters.types.default)",
+      "clima": "(dev: filters.types.clima)",
+      "cycling": "(dev: filters.types.cycling)",
+      "hiking": "(dev: filters.types.hiking)",
+      "rugby": "(dev: filters.types.rugby)",
+      "swimming": "(dev: filters.types.swimming)"
+    },
+    "visualization": {
+      "grid": "(dev: filters.visualization.grid)",
+      "list": "(dev: filters.visualization.list)"
+    }
+  },
+  "header": {
+    "label": "(dev: header.label)",
+    "doc": "(dev: header.doc)"
+  },
+  "products": {
+    "label": "(dev: products.label)"
+  },
+  "wishlist": {
+    "label": "(dev: wishlist.label)",
+    "empty": "(dev: wishlist.empty, {{ fullName }})"
+  },
+  "component": {
+    "auth": {
+      "accept": "(dev: component.auth.accept)",
+      "cancel": "(dev: component.auth.cancel)"
+    },
+    "product": {
+      "category": "(dev: component.product.category)",
+      "sport": "(dev: component.product.sport)",
+      "rating": "(dev: component.product.rating)"
+    }
+  }
+}

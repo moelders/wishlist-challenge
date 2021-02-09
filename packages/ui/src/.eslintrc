@@ -1,0 +1,58 @@
+{
+  "extends": [
+    "adidas-env/browser",
+    "adidas-env/module"
+  ],
+  "rules": {
+    "template-curly-spacing" : "off",
+    "indent": [
+      "error", 2, {
+        "outerIIFEBody": 1,
+        "SwitchCase": 0,
+        "VariableDeclarator": 1,
+        "MemberExpression": "off",
+        "FunctionDeclaration": {
+          "parameters": 2,
+          "body": 1
+        },
+        "FunctionExpression": {
+          "parameters": 2,
+          "body": 1
+        },
+        "CallExpression": {
+          "arguments": 1
+        },
+        "ArrayExpression": 1,
+        "ObjectExpression": 1,
+        "ImportDeclaration": 1,
+        "flatTernaryExpressions": false,
+        "ignoredNodes": [
+          "JSXIdentifier",
+          "JSXMemberExpression",
+          "JSXNamespacedName",
+          "JSXEmptyExpression",
+          "JSXExpressionContainer",
+          "JSXSpreadChild",
+          "JSXBoundaryElement",
+          "JSXOpeningElement",
+          "JSXClosingElement",
+          "JSXAttribute",
+          "JSXSpreadAttribute",
+          "JSXText",
+          "JSXElement",
+          "JSXFragment",
+          "TemplateLiteral"
+        ],
+        "ignoreComments": false
+      }
+    ],
+    "no-console": "off",
+    "camelcase": [
+      "error",
+      {
+        "ignoreDestructuring": true,
+        "properties": "never"
+      }
+    ]
+  }
+}

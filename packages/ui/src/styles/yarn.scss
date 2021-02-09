@@ -1,0 +1,23 @@
+@import '~yarn-design-system/dist/yarn-base.css';
+@import '~yarn-design-system/dist/yarn-utils.css';
+@import '~yarn-design-system/dist/yarn-core.css';
+@import '~yarn-design-system-fonts/dist/yarn-fonts.css';
+@import '~yarn-design-system-icons/dist/yarn-icons.css';
+@import '~yarn-design-system-logos/dist/yarn-logos.css';
+@import '~yarn-design-system-choicesjs-stencil/dist/choicesjs-stencil.css';
+@import '~yarn-design-system-rc-input-number/dist/rc-input-number.css';
+@import 'vars';
+
+.header {
+  .link {
+    height: 100%;
+  }
+
+  .chip {
+    background-color: $d-gray-light;
+
+    &.chip--interactive:hover {
+      background-color: $d-gray-lighter;
+    }
+  }
+}
